@@ -4,7 +4,7 @@ deploy:
   access_key_id: APKAJTRWMS55Q6IOR3WA
   secret_access_key:
     secure: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArBlAlCxnNzJRky8Fqrgs7O7h5HxUk/d7MtuzlKcRUsC6cbJiW3ppnc6U42WGZX6WFQNMb5PfMQPI19dx2HriE0hfsVG5QPPoE0209Z8Mis3ULAud99XOj1siqqtnbEuFXXEyFCl23cwCq7kQIQz+8afLDZlwee19m1POw9iUOATiOEltLVbgcvYnw2gB826v87z89ny14yH2BotlQWr9BXVqvmvwfB4EIKxmaPIAzQCLiXZ1fdTF7g1+fopC0KxJMsh4/wLhIDciEEzLQ3K50eLnob0U/7jRMquvuJvomzTz2JNaL8YbVWw+hgrVeHk3MvehnqQaPDcl4CbaceNU9QIDAQAB
-  bucket: forlabsgitplusamazon-outputbucket-obph0idpkdej
+  bucket: test36986
   on:
     repo: andrew36986/ForLabs
   acl: public_read
