@@ -24,7 +24,7 @@ p {
 }
 .blocks {
 	width: 800px;
-	height: 525x;
+	height: 525px;
     display: flex;
     flex-direction:column;
 }
