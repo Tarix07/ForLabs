@@ -34,7 +34,7 @@ p {
     height: 173px;
     display: flex;
     flex-direction: row;
-    background-color: #8E4CB8;
+    background-color: chocolate;
     border:  1px solid black;
 }
 
