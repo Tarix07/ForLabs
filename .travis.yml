@@ -1,9 +1,9 @@
 language: generic
 deploy:
   provider: s3
-  access_key_id: APKAJTRWMS55Q6IOR3WA
+  access_key_id: AKIAIY76BGCHIQAS34VA
   secret_access_key:
-    secure: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArBlAlCxnNzJRky8Fqrgs7O7h5HxUk/d7MtuzlKcRUsC6cbJiW3ppnc6U42WGZX6WFQNMb5PfMQPI19dx2HriE0hfsVG5QPPoE0209Z8Mis3ULAud99XOj1siqqtnbEuFXXEyFCl23cwCq7kQIQz+8afLDZlwee19m1POw9iUOATiOEltLVbgcvYnw2gB826v87z89ny14yH2BotlQWr9BXVqvmvwfB4EIKxmaPIAzQCLiXZ1fdTF7g1+fopC0KxJMsh4/wLhIDciEEzLQ3K50eLnob0U/7jRMquvuJvomzTz2JNaL8YbVWw+hgrVeHk3MvehnqQaPDcl4CbaceNU9QIDAQAB
+    secure: ppkLsUTX6EQUUjOtaqEb7Y/fQ8vNz2WU9V8fXD0s
   bucket: forlabsgitplusamazon-outputbucket-obph0idpkdej
   on:
     repo: andrew36986/ForLabs
