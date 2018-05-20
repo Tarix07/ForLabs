@@ -3,7 +3,7 @@ deploy:
   provider: s3
   access_key_id: AKIAIY76BGCHIQAS34VA
   secret_access_key: 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
-  bucket: forlabsgitplusamazon-outputbucket-obph0idpkdej
+  bucket: test36986
   on:
     repo: andrew36986/ForLabs
   acl: public_read
