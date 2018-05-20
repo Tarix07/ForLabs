@@ -1,8 +1,8 @@
 language: generic
 deploy:
   provider: s3
-  access_key_id: AKIAIY76BGCHIQAS34VA
-  secret_access_key: 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
+  access_key_id: AKIAJVJY3DKTD7RYTFIQ
+  secret_access_key: 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
   bucket: test36986
   on:
     repo: andrew36986/ForLabs
