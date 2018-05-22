@@ -7,10 +7,6 @@ body {
 #main {
     padding: 0px;
 	display: flex;
-	display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     -webkit-flex-flow: row;
     margin: auto;
 }
@@ -84,7 +80,7 @@ p {
             order: 0;
 		}
 		.item8 {
-			display: none;
+			margin: auto;
 		}
 		
         #main > .item2, .item3, .item8 {
@@ -94,7 +90,6 @@ p {
 			max-width: 798px;
         }
     }
-	
     @media all and (max-width: 810px) {
         #main, #page {
             flex-direction: column;
@@ -112,11 +107,11 @@ p {
 			height: 148px;
 		}
         .blocks > div > div {
-        min-width: 248px;
+        width: 248px;
         height: 148px;
         }
 		.item8 {
-			display: none;
+			margin: auto;
 		}
         #main > .item2, .item3, .item8 {
             min-height: 148px;
@@ -135,7 +130,7 @@ p {
 			width: 300px;
 		}
 		.blocks {
-			width: 300px;
+			width: inherit;
 			height: 450px;
 		}
 		.blocks > div {
@@ -143,11 +138,11 @@ p {
 			height: 148px;
 		}
         .blocks > div > div {
-        min-width: 148px;
+        width: 148px;
         height: 148px;
         }
 		.item8 {
-			display: none;
+			margin: auto;
 		}
         #main > .item2, .item3, .item8 {
             min-height: 148px;
@@ -156,4 +151,3 @@ p {
 			max-width: 298px;
         }
     }
-
