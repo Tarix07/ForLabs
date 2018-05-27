@@ -137,6 +137,9 @@ th,td {
     .Theme {
         font-size: 42pt;
     }
+    h1 {
+        font-size: 10pt;
+    }
     h2 {
         font-size: 16pt;
     }
