@@ -1,0 +1,153 @@
+@charset "utf-8";
+body {
+	font: 14px Helvetica;
+	background: #ffffff;
+}
+	
+#main {
+    padding: 0px;
+	display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+.item1 > p {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+}
+p {
+    padding-left: 10px;
+}
+.blocks {
+	width: 800px;
+	height: 525px;
+    display: flex;
+    flex-direction:column;
+}
+
+
+.blocks > div{
+    height: 173px;
+    display: flex;
+    flex-direction: row;
+    background-color: chocolate;
+    border:  1px solid black;
+}
+
+.blocks > div > div {
+	width: 398px;
+    height: 173px;
+	overflow-x:hidden;
+    border: 1px solid black;
+}
+
+.item2, .item3 {
+	background-color: #EE942D;
+	border: 1px solid black;
+	min-height: 298px;
+}
+
+#main > .item2 {
+	flex: 1 6 20%;
+	order: 0;
+}
+
+#main > .item3 {
+	flex: 1 6 20%;
+	order: 2;
+}
+
+.item8 {
+    display: flex;
+	background-color: #EE942D;
+	border: 1px solid black;
+    height: 98px;
+}
+
+	@media all and (max-width: 1000px) {
+        #main, #page {
+            flex-direction: column;
+        }
+		#main {
+			align-self: center;
+			width: 800px;
+		}
+        #main > .blocks {
+            order: 0;
+			min-height: 300px;
+        }
+		#main > .item2, .item3, .item8 {
+            order: 0;
+		}
+		.item8 {
+			margin: auto;
+		}
+		
+        #main > .item2, .item3, .item8 {
+            min-height: 98px;
+            max-height: 98px;
+			min-width: 798px;
+			max-width: 798px;
+        }
+    }
+    @media all and (max-width: 810px) {
+        #main, #page {
+            flex-direction: column;
+        }
+		#main {
+			align-self: center;
+			width: 500px;
+		}
+		.blocks {
+			width: 500px;
+			height: 450px;
+		}
+		.blocks > div {
+			width: 498px;
+			height: 148px;
+		}
+        .blocks > div > div {
+        width: 248px;
+        height: 148px;
+        }
+		.item8 {
+			margin: auto;
+		}
+        #main > .item2, .item3, .item8 {
+            min-height: 148px;
+            max-height: 148px;
+			min-width: 498px;
+			max-width: 498px;
+        }
+    }
+
+    @media all and (max-width: 525px) {
+        #main, #page {
+            flex-direction: column;
+        }
+		#main {
+			align-self: center;
+			width: 300px;
+		}
+		.blocks {
+			width: inherit;
+			height: 450px;
+		}
+		.blocks > div {
+			width: 298px;
+			height: 148px;
+		}
+        .blocks > div > div {
+        width: 148px;
+        height: 148px;
+        }
+		.item8 {
+			margin: auto;
+		}
+        #main > .item2, .item3, .item8 {
+            min-height: 148px;
+            max-height: 148px;
+			min-width: 298px;
+			max-width: 298px;
+        }
+    }
