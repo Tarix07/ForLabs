@@ -1,0 +1,149 @@
+nav {
+    background: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.65));
+    height:50px;
+    width:100%;
+    border: 1px solid white;
+    border-image: url(images/iron-border.png) 8 stretch;
+    border-width: 8px;
+    margin: auto;
+    margin-top: 40px;
+}
+nav a {
+    display: block;
+    float: left;
+    height: 50px;
+}
+nav p, nav h1 {
+    margin: 0px;
+    font-family: sans-serif;
+}
+h2 {
+    text-align: center;
+    font-size: 24pt;
+    color: #fff;
+    font-family: sans-serif;
+}
+p {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14pt;
+}
+.error {
+    color: red;
+    font-size: 16pt;
+}
+#logotip {
+    width: 25%;
+    height: 25%;
+    float: left;
+}
+body {
+    background: url(images/background.jpg) top center no-repeat;
+    background-attachment: scroll;
+    background-color: #191a1c;
+    width: 1000px;
+    margin: auto;
+}
+footer{
+    width: 100%;
+}
+.Theme {
+    color:#FFF;
+    font-size:140pt;
+    font-family: sans-serif;
+    margin: 0px;
+}
+a {
+    text-decoration: none;
+    width: 25%;
+    color:#fff;
+    text-align:center;
+    line-height: 45px;
+    font-size: 20px;
+}
+a:hover {
+    background: inherit;
+}
+.active {
+    background: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.85));
+}
+h3 {
+    border-bottom: 1px solid white;
+    border-image: url(images/iron-border.png) 8 stretch;
+    border-width: 8px;
+    font-size: 30px;
+    color: white;
+    font-family: sans-serif;
+}
+button {
+    width: 100px;
+    height: 50px;
+    background: #191a1c;
+    color: #fff;
+    margin: auto;
+}
+table,th,td {
+    border : 3px solid black;
+    border-collapse: collapse;
+    color: white;
+    text-align: center;
+}
+th,td {
+    padding: 5px;
+}
+
+
+@media screen and (max-width:1000px)
+{
+    body{
+        width: 800px;
+    }
+    .Theme {
+        font-size: 110pt;
+    }
+}
+@media screen and (max-width:800px)
+{
+    body{
+        width: 600px;
+    }
+    .Theme {
+        font-size: 80pt;
+    }
+}
+@media screen and (max-device-width:1000px)
+{
+    body{
+        width: 800px;
+    }
+    .Theme {
+        font-size: 110pt;
+    }
+}
+@media screen and (max-device-width:800px)
+{
+    body{
+        width: 600px;
+    }
+    .Theme {
+        font-size: 80pt;
+    }
+}
+@media screen and (max-device-width:500px)
+{
+    body{
+        width: 300px;
+    }
+    .Theme {
+        font-size: 42pt;
+    }
+    h2 {
+        font-size: 16pt;
+    }
+    h3{
+        font-size: 14pt;
+    }
+    p {
+        font-size: 12pt;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Фан-сайт Ведьмак: Квесты</title>
+        
+        <!--Стили-->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="styles/form.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/forAllPages.css"/>
+        
+        <!--Скрипты-->
+        <script src="scripts/val.js"></script>
+        <script src="scripts/nwxforms.js"></script>
+        <script src="scripts/bestii.js"></script>
+        <!--[if lt IE 9]>
+        <script src="scripts/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <header>
+            <img alt="Логотип" id="logotip" src="images/medals/logo.png"/><p class="Theme">Ведьмак</p>
+        </header>
+        <nav>
+            <a href="index.html"><p>Главная</p></a>
+            <a class="active" href="ValForm.html"><h1>Квесты</h1></a>
+            <a href="AJAX.html"><p>Книги</p></a>
+            <a href="Canvas.html"><p>Искусство</p></a>
+        </nav>
+        <section>
+            <h2>Ведьмачьи заказы онлайн</h2>
+            <div id="forAuUser">
+                <form id="valForm">
+                    <div>
+                        <fieldset>
+                            <legend>Заполните форму</legend>
+                            <div><label for="name">Имя</label></div>
+                            <div><input class="required" name="name" id="name" type="text" placeholder="Ваше имя" autofocus="" required="" title="Ваше имя, думаю разберётесь"></div> 
+
+                            <div><label for="surname">Фамилия</label></div>
+                            <div><input name="surname" id="surname" type="text" placeholder="Ваша фамилия" required="" title="Ваша фамилия"></div>
+
+                            <div><label for="email">Email</label></div>
+                            <div><input name="email" id="email" type="email" placeholder="witcher@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required="" title="Введите свой электронный адрес"></div>
+
+                            <div><label for="gender">Пол</label></div>
+                            <div><select name="gender" id="gender" title="Выберите пол, желательно свой"><option value="male">Мужской</option><option value="female">Женский</option></select></div>
+
+                            <div><label for="age">Возраст</label></div>
+                            <div><input name="age" id="age" type="number" placeholder="Ваш возраст" data-regexp="[0-9]" required="" title="Введите колличество лет, что вы прожили до сего момента"></div>
+
+                            <div><label for="tel">Телефон</label></div>
+                            <div><input name="tel" id="tel" type="tel" placeholder="+380661234567" pattern="^\+380\d{9}$" required="" title="Введите номер вашего телефона"></div><br>
+                            <div><label>Выберите чудовищ, на которых хотите получать заказы:</label></div><br>
+                            <input type="checkbox" id="beasts">Бестии<br>
+                            <input type="checkbox" id="draconids">Дракониды<br>
+                            <input type="checkbox" id="insectoids">Инсектоиды<br>
+                            <input type="checkbox" id="ogres">Огры<br>
+                            <input type="checkbox" id="ghosts">Призраки<br>
+                            <input type="checkbox" id="golems">Големы<br>
+                            <input type="checkbox" id="specialMonsters">Особые монсты
+                        </fieldset>
+                    </div>
+                    <table id="forJson"></table>
+                    <div>
+                        <p>Загрузите фото:</p>
+                        <input type="file" id="images" multiple="">
+                        <div id="forImage"></div>
+                    </div>
+                    <button type="submit" title="Отправить форму">Отправить</button>
+                </form>
+                <div>
+                    <button id="bestiiTable">Показать цены</button>
+                </div>
+            </div>
+            <div>
+                <button id="logOut">Выход</button>
+            </div>
+        </section>
+    </body>
+</html>

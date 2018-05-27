@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Фан-сайт Ведьмак: Книги</title>
+        
+        <!--Стили-->
+        <meta charset=utf-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="styles/forAjax.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/forAllPages.css"/>
+        
+        <!--Скрипты-->
+        <script src="scripts/ajax.js"></script>
+        <!--[if lt IE 9]>
+        <script src="scripts/html5shiv.js"></script>
+        <![endif]-->
+        
+    </head>
+    <body>
+        <header>
+            <img alt="Логотип" id="logotip" src="images/medals/logo.png"/><p class="Theme">Ведьмак</p>
+        </header>
+        <nav>
+            <a href="index.html"><p>Главная</p></a>
+            <a href="ValForm.html"><p>Квесты</p></a>
+            <a class="active" href="AJAX.html"><h1>Книги</h1></a>
+            <a href="Canvas.html"><p>Искусство</p></a>
+        </nav>
+        <section>
+            <h2>Книги по вселенной "Ведьмак"</h2>
+            <img alt='Обложки книг по вселенной "Ведьмак"' id="books" src="images/books.jpg"/>
+            <table id="forXml"></table>
+            <div>
+                <button id="booksTable">Показать</button>
+            </div>
+            <h2>Поэма "Пятый ведьмак"</h2>
+            <div id="otvet">
+                <div>
+                    <button id="poem">Показать</button>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
