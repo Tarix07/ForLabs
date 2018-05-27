@@ -1,0 +1,55 @@
+aside img {
+    border: 1px solid white;
+    border-image: url(images/iron-border.png) 8 stretch;
+    border-width: 8px;
+    margin-left: 20px;
+}
+img {
+    width: 400px;
+    height: 300px;
+}
+aside {
+    text-align: center;
+}
+canvas {
+    background: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.forButtons {
+    list-style-type: none;
+}
+.drawing {
+   display: flex;
+}
+#holst {
+    width: 310px;
+    height: 310px;
+    margin: auto;
+}
+
+@media screen and (max-width:1000px)
+{
+    .drawing {
+        display: block;
+        text-align: center;
+    }
+    ul {
+        padding: 0px;
+    }
+    aside div {
+        margin: 0px;
+        text-align: center;
+    }
+}
+@media screen and (max-device-width:500px)
+{
+    body{
+        width: 300px;
+    }
+    aside img {
+        border: none;
+        width: 300px;
+        margin: 5px;
+    }
+}

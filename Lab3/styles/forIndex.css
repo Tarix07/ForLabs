@@ -1,0 +1,72 @@
+article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+}
+#witcherBook {
+    float: left;
+    margin-right: 10px;
+}
+footer {
+    flex-direction: row;
+    width: 1000px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+footer div {
+    text-align: center;
+}
+.stylebox {
+    width: 100%-16px;
+    height: 335px;
+    border: 1px solid white;
+    border-image: url(images/iron-border.png) 8 stretch;
+    border-width: 8px;
+}
+#red, #blue, #yellow, #logo3 {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+.drophere {
+    width: 300px;;
+    height: 50%;
+    border: 2px solid white;
+    float: right;
+    margin: 40px;
+    position:static;
+}
+#plotva {
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+}
+input {
+    margin-top: 10px;
+    color: white;
+    margin-bottom: 20px;
+}
+canvas {
+    width: 50%;
+}
+@media screen and (max-device-width:500px)
+{
+    #red, #blue, #yellow, #logo3 {
+        width: 70px;
+        height: 70px;
+    }
+    .drophere {
+        width: 200px;
+        height: 130px;
+    }
+    #witcherBook {
+        float: inherit;
+    }
+    canvas{
+        width: 300px;
+    }
+}
