@@ -24,3 +24,9 @@ table {
 input {
     background-color: white;
 }
+@media screen and (max-device-width:500px)
+{
+    iframe {
+        width: 300px;
+    }
+}

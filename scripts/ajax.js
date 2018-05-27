@@ -47,7 +47,7 @@ var pageLoad = function () {
                 table += '<tr><td>' + x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue + '</td><td>' + x[i].getElementsByTagName('description')[0].childNodes[0].nodeValue + '</td><td><a class="ulightbox" href="' + x[i].getElementsByTagName('download')[0].childNodes[0].nodeValue + '" title="Нажмите, чтобы скачать">тут</a></td></tr>';
             }
             document.getElementById('booksTable').style.visibility = 'hidden';
-            document.getElementById("forXml").innerHTML = table;//выводим таблицу
+            document.getElementById('forXml').innerHTML = " " + table;//выводим таблицу
         }
     };
     
