@@ -1,4 +1,4 @@
-var pageloadDrag= function () {
+var pageloadDrag = function () {
     'use strict';
     //задаём элементы, которые будем двигать
     var logored = document.getElementById('red'),
