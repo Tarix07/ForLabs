@@ -25,7 +25,7 @@ function plotvaUpnDown() {
     var plotva = document.getElementById('plotva'),
         plotvaContext = plotva.getContext('2d');
     plotvaContext.drawImage(images[Math.floor(сount / 4)], 0, 0);//рисуем кадр
-    imgCount = Math.floor((сount + 1) % 244);//след кадр
+    count = Math.floor((сount + 1) % 244);//след кадр
     if (StopStartAnimation) {
         requestAnimationFrame(plotvaUpnDown);//повтор
     }
