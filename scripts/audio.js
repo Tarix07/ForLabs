@@ -46,5 +46,5 @@ function stopAllAudio() {
 if (window.addEventListener) {
     window.addEventListener('load', docLoad);
 } else {
-    window.attachEvent('onload', docLoade);
+    window.attachEvent('onload', docLoad);
 }

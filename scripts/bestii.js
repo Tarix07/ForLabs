@@ -28,7 +28,7 @@ var pageLoad = function () {
             var i = 0,
                 JSONDoc = JSON.parse(request3.responseText),
                 table = '<tr>';
-            for(name in JSONDoc) {
+            for (name in JSONDoc) {
                 table += '<th>' + name + '</th>';
             }
             table += '</tr>';
