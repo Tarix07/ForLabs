@@ -32,8 +32,8 @@ var pageLoad = function () {
                 table += '<th>' + name + '</th>';
             }
             table += '</tr>';
-            for (name in JSONDoc.Вид) {
-                table += '<tr><td>' + JSONDoc.Вид[name] + '</td><td>' + JSONDoc.Цена[name] + '</td><tr>';//создаём таблицу для полученных данных
+            for (name in JSONDoc['Вид']) {
+                table += '<tr><td>' + JSONDoc['Вид'][name] + '</td><td>' + JSONDoc['Цена'][name] + '</td><tr>';//создаём таблицу для полученных данных
                 i++;
             }
             bestiiTable.style.visibility = 'hidden';
