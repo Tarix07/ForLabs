@@ -1,6 +1,6 @@
 var pageLoad = function () {
     'use strict';
-    function crXMLHttpRequest() {//возможность делать http запросы
+    function crXMLHttpRequest() {//http запросы в старых и современных браузерах
         var res = false;
         if (window.XMLHttpRequest) {
             res = new XMLHttpRequest();
@@ -27,9 +27,13 @@ var pageLoad = function () {
         } else {
             var i = 0,
                 JSONDoc = JSON.parse(request3.responseText),
-                table = '<tr><th>Вид</th><th>Цена</th></tr>';
-            for (name in JSONDoc.Kind) {
-                table += '<tr><td>' + JSONDoc.Kind[name] + '</td><td>' + JSONDoc.Price[name] + '</td><tr>';//создаём таблицу для полученных данных
+                table = '<tr>';
+            for(name in JSONDoc) {
+                table += '<th>' + name + '</th>';
+            }
+            table += '</tr>';
+            for (name in JSONDoc.Вид) {
+                table += '<tr><td>' + JSONDoc.Вид[name] + '</td><td>' + JSONDoc.Цена[name] + '</td><tr>';//создаём таблицу для полученных данных
                 i++;
             }
             bestiiTable.style.visibility = 'hidden';
@@ -44,20 +48,16 @@ function uploadYourMedal() {
         //при получении ссылки на картинку меняем её размер и вывдим
         var medal = document.getElementById('forImage');
         medal.innerHTML = '';
-        if (images.files) {
+        var fileType = this.files[0].type;//тип файла
+        if (fileType.indexOf('image') != -1) {//проверяем картинка это или нет
             var medalPic = new Image();
             medalPic.src = URL.createObjectURL(images.files[0]);
-            medalPic.style.width = 100 + 'px';
-            medalPic.style.height = 100 + 'px';
+            medalPic.style.width = 150 + 'px';//задаём размер картинки
+            medalPic.style.height = 150 + 'px';
             medalPic.style.marginTop = 10 + 'px';
-            medal.appendChild(medalPic);
+            medal.appendChild(medalPic);//выводим
         } else {
-            var medalPic = new Image();
-            medalPic.src = images.value;
-            medalPic.style.width = 100 + 'px';
-            medalPic.style.height = 100 + 'px';
-            medalPic.style.marginTop = 10 + 'px';
-            medal.appendChild(medalPic);
+            alert('Это не фото!')
         }
     };
 }

@@ -5,6 +5,8 @@ var pageloadDrag= function () {
         logoblue = document.getElementById('blue'),
         logoyellow = document.getElementById('yellow'),
         logo3 = document.getElementById('logo3'),
+        forClone = document.getElementById('clone'),
+        clone = forClone.cloneNode(false),
         dragelements,
         //зоны передвижения элементов
         drophere,
@@ -89,6 +91,12 @@ var pageloadDrag= function () {
                     logoyellow.style.top = '15px';
                     logoyellow.style.left = '15px';
                 }
+                if(dragelements === forClone) {
+                    drophere.appendChild(clone);
+                    forClone.style.position = 'relative';
+                    forClone.style.top = '15px';
+                    forClone.style.left = '15px';
+                }
             }
         };
     }
@@ -96,6 +104,7 @@ var pageloadDrag= function () {
     logo3.onmousedown = catchhand;
     logoblue.onmousedown = catchhand;
     logoyellow.onmousedown = catchhand;
+    forClone.onmousedown = catchhand;
     window.onresize = reset_blocks;//вернуть элементы на место при маштабировании страницы
     function reset_blocks() {
         logored.style.position = 'relative';
@@ -110,6 +119,9 @@ var pageloadDrag= function () {
         logo3.style.top = '15px';
         logoblue.style.top = '15px';
         logoyellow.style.top = '15px';
+        forClone.style.position = 'relative';
+        forClone.style.top = '15px';
+        forClone.style.left = '15px';
     } 
 };
 //запускаем скрип при загрузке страницы

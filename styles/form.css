@@ -17,6 +17,9 @@ fieldset {
     margin: auto;
     font-size: 14pt;
 }
+fieldset div {
+    margin-top: 5px;
+}
 table {
     margin: auto;
     margin-top: 20px;
