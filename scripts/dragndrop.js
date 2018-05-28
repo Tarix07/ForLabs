@@ -11,13 +11,13 @@ var pageloadDrag= function () {
         //зоны передвижения элементов
         drophere,
         stylebox;
-        if (document.getElementsByClassName) { //для работы в старых браузерах
-            drophere = document.getElementsByClassName('drophere')[0],
-            stylebox = document.getElementsByClassName('stylebox')[0];
-        } else {
-            drophere = document.querySelectorAll('.drophere')[0];
-            stylebox = document.querySelectorAll('.stylebox')[0];
-        }
+    if (document.getElementsByClassName) { //для работы в старых браузерах
+        drophere = document.getElementsByClassName('drophere')[0];
+        stylebox = document.getElementsByClassName('stylebox')[0];
+    } else {
+        drophere = document.querySelectorAll('.drophere')[0];
+        stylebox = document.querySelectorAll('.stylebox')[0];
+    }
     function catchhand(e) {//захват элемента для передвижения
         dragelements = this;
         e = e || window.event;

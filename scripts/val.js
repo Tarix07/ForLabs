@@ -1,6 +1,6 @@
 var pageLoad = function () {
     'use strict';
-    nwxforms(this);//включаем полифил
+    nwxforms(this);//полифил
     var form = document.getElementById('valForm');
     form.onsubmit = saveCookies;
     cooked();
