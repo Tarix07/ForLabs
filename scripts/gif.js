@@ -1,8 +1,8 @@
 var images,
-    imgCount = 0,
+    сount = 0,
     StopStartAnimation = true;
 function pageloadAnimation() {
-    "use strict";
+    'use strict';
     //задаём размер холста для анимации
     document.getElementById('plotva').width = 600;
     document.getElementById('plotva').height = 350;
@@ -21,11 +21,11 @@ function pageloadAnimation() {
     }
 }
 function plotvaUpnDown() {
-    "use strict";
-    var ringInHands = document.getElementById('plotva'),
-        ringcontext = ringInHands.getContext('2d');
-    ringcontext.drawImage(images[Math.floor(imgCount / 4)], 0, 0);//запуск анимации
-    imgCount = Math.floor((imgCount + 1) % 244);
+    'use strict';
+    var plotva = document.getElementById('plotva'),
+        plotvaContext = plotva.getContext('2d');
+    plotvaContext.drawImage(images[Math.floor(сount / 4)], 0, 0);//рисуем кадр
+    imgCount = Math.floor((сount + 1) % 244);//след кадр
     if (StopStartAnimation) {
         requestAnimationFrame(plotvaUpnDown);//повтор
     }

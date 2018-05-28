@@ -42,12 +42,12 @@ var pageLoad = function () {
                 //создаём тамблицу для полученных данных
                 xmlDoc = request2.responseXML,
                 table = '<tr><th>Название</th><th>Краткое описание</th><th>Скачать(fb2)</th></tr>',
-                x = xmlDoc.getElementsByTagName("book");
+                x = xmlDoc.getElementsByTagName('book');
             for (i = 0; i < x.length; i++) {
-                table += '<tr><td>' + x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue + '</td><td>' + x[i].getElementsByTagName('description')[0].childNodes[0].nodeValue + '</td><td><a class="ulightbox" href="' + x[i].getElementsByTagName('download')[0].childNodes[0].nodeValue + '" title="Нажмите, чтобы скачать">тут</a></td></tr>';
+                table += '<tr><td>' + x[i].getElementsByTagName('name')[0].childNodes[0].nodeValue + '</td><td>' + x[i].getElementsByTagName('description')[0].childNodes[0].nodeValue + '</td><td><a class="ulightbox" href="' + x[i].getElementsByTagName('download')[0].childNodes[0].nodeValue + '" title="Нажмите, чтобы скачать">тут</a></td></tr>';
             }
             document.getElementById('booksTable').style.visibility = 'hidden';
-            document.getElementById('forXml').innerHTML = " " + table;//выводим таблицу
+            document.getElementById('forXml').innerHTML = table;//выводим таблицу
         }
     };
     
