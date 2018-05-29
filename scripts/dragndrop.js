@@ -43,11 +43,11 @@ var pageloadDrag = function () {
         }
         dragelements.style.position = 'absolute';
         movingmouse(e);
-        dragelements.style.zIndex = 10;//
+        dragelements.style.zIndex = 10;
         document.onmousemove = movingmouse;
         dragelements.onmouseup = function (e) {
             e = e || window.event;
-            if (!e.pageX) {//запомнить место элемента после перемещения
+            if (!e.pageX) {
                 e.pageX = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
                 e.pageY = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
             }
